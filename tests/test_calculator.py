@@ -29,4 +29,4 @@ def test_raises_number_to_power():
     from calculator import power
 
     # 故意写错期望值，用于练习 pytest 失败和后续 Git/CI 排错。
-    assert power(2, 3) == 10
+    assert power(2, 3) == 10,"故意写错的测试用例"
