@@ -1,6 +1,8 @@
 """供 TDD 练习使用的简单计算器。"""
 #
 
+                  
+
 def add(left, right):
     """返回两个数的和。"""
     return left + right
