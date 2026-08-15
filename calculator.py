@@ -21,3 +21,6 @@ def multiply(left, right):
 def divide(left, right):
     """返回两个数的商。"""
     return left / right
+
+
+#test restore
