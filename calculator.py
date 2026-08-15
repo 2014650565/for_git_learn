@@ -1,6 +1,7 @@
 """供 TDD 练习使用的简单计算器。"""
 
 #1
+#2
                   
 
 def add(left, right):
