@@ -23,7 +23,3 @@ def divide(left, right):
     """返回两个数的商。"""
     return left / right
 
-
-def power(base, exponent):
-    """返回底数的指定次幂。"""
-    return base**exponent
