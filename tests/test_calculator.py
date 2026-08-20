@@ -1,7 +1,7 @@
 from jsonpath import jsonpath
 import requests
 
-def teset_login():
+def test_login():
     resp=requests.post(url='http://43.133.227.52/api/login',
                        json={'username':'tester',
                              'password':'123456'}).json()
