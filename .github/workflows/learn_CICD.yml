@@ -1,6 +1,8 @@
 name: for_learn_github_actions
 
-on: push
+on: 
+    push:
+    workflow_dispatch:
 
 jobs: 
     
@@ -17,5 +19,6 @@ jobs:
             - name: install dependencies
               run: pip install  -r requirements.txt
 
-            - run: pytest
+            -   name: 执行测试
+                run: pytest
 
