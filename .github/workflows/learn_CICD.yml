@@ -17,6 +17,9 @@ jobs:
                with:
                  python-version: "3.13"
 
+             - name: install dependencies
+               run: pip install pytest requests
+
              - name: 执行测试
                run: pytest
          
