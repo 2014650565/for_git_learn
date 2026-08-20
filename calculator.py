@@ -1,5 +1,6 @@
 """供 TDD 练习使用的简单计算器。"""
 
+#new01
 
                   
 
@@ -23,6 +24,7 @@ def divide(left, right):
     return left / right
 
 
-def power(base, exponent):
-    """返回底数的指定次幂。"""
-    return base**exponent
+
+
+
+#test restore
