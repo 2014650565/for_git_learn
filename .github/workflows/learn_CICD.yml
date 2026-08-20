@@ -1,25 +1,21 @@
-name: learn CICD
+name: for_learn_github_actions
 
-on: [push]
+on: push
 
+jobs: 
+    
+    test:
+        runs-on: ubuntu-latest
 
-jobs:
+        steps:
+            - name: 拉取代码
+              uses: actions/checkout@v4
+            - uses: actions/setup-python@v5
+              with:
+                 python-version: '3.12'
 
-    build:
-         runs-on: ubuntu-latest
+            - name: install dependencies
+              run: pip install  -r requirements.txt
 
-         steps:
-             -  name: 拉取代码
-                uses: actions/checkout@v4
+            - run: pytest
 
-             - name: setup python
-               uses: actions/setup-python@v5
-               with:
-                 python-version: "3.13"
-
-             - name: install dependencies
-               run: pip install pytest requests jsonpath
-
-             - name: 执行测试
-               run: pytest
-         
