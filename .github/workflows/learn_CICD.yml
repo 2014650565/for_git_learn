@@ -25,6 +25,3 @@ jobs:
             - name: generate reports
               run: allure generate temps -o reports --clean
 
-            - name: open reports
-              run: allure open reports
-
